@@ -1,0 +1,73 @@
+$border-color: rgba(0,0,0,0.2);
+$placeholder-color: rgba(0,0,0,0.5);
+$button-color: #0a7cff;
+
+main {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+
+  img {
+    max-height: max-content;
+    max-width: max-content;
+  }
+
+  h1 {
+    padding: 2rem 0;
+    font-size: 2.25rem;
+  }
+  
+  input[type=text],input[type=password] {
+    height: 2.5rem;
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    font-size: 1rem;
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    color: $placeholder-color;
+
+    input[type=checkbox] {
+      height: 1rem;
+      width: 1rem;
+      margin-right: 0.75rem;
+    }
+  }
+
+  button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: $button-color;   
+  }
+}
+
+footer{
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    a {
+      margin: 0 1rem;
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+}
